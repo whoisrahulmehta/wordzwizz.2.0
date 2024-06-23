@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wordzwizz.2.0/static/css/main.25699d55.css",
+    "main.js": "/wordzwizz.2.0/static/js/main.71323144.js",
+    "static/js/453.178293c1.chunk.js": "/wordzwizz.2.0/static/js/453.178293c1.chunk.js",
+    "index.html": "/wordzwizz.2.0/index.html",
+    "main.25699d55.css.map": "/wordzwizz.2.0/static/css/main.25699d55.css.map",
+    "main.71323144.js.map": "/wordzwizz.2.0/static/js/main.71323144.js.map",
+    "453.178293c1.chunk.js.map": "/wordzwizz.2.0/static/js/453.178293c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25699d55.css",
+    "static/js/main.71323144.js"
+  ]
+}
