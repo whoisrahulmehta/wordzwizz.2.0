@@ -1,0 +1,63 @@
+@media screen and (max-width: 480px) {
+//setting height and width
+header{
+    height: 7%;
+}
+footer{
+    height:10%;
+}
+main{
+    height: 83%;
+}
+    header{
+        width: 100%;
+        font-size: 1.7rem;
+    }
+footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 1.2rem;
+        padding: 2% 2%;
+    }
+}
+main{
+    .inputArea{
+        height:10%;
+        gap:5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        textarea{
+            height:20px;
+        }
+        .btns{
+            width: 100%;
+            @include FR;
+            gap: 8px;
+        }
+    }
+    .outputArea{
+        height: 90%;
+        .meaningCard{
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            .card{
+                min-height: 130px;
+                width:90%;
+                @include FC;
+                justify-content: start;
+                align-items: center;
+                .cardTop{
+                    height: 50%;
+                }
+                .cardEnf{
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
+}

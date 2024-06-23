@@ -1,0 +1,93 @@
+@mixin MFD {
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  // color: white;
+}
+@mixin MFL {
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  // color: black;
+}
+$blue: rgb(0, 174, 255);
+//for dark colour theme
+.dark {
+  background-color: black;
+  color: white;
+  header {
+    background-color: red;
+    b {
+      color: black;
+    }
+  }
+  footer {
+    color: red;
+    @include MFD;
+  }
+  main {
+    .btns {
+      border: 1px solid white;
+    }
+    .card:nth-child(odd) {
+      @include MFD;
+    }
+  }
+  .ocardtop {
+    @include MFD;
+  }
+}
+
+//for light color theme
+.light {
+  background-color: white;
+  color: black;
+  header {
+    background-color: rgb(0, 170, 255);
+
+    b {
+      color: gold !important;
+    }
+  }
+  footer {
+    color: gold;
+    @include MFL;
+  }
+  main {
+    .btns {
+      border: 1px solid $blue;
+    }
+    .card:nth-child(even) {
+      @include MFL;
+    }
+  }
+  .ocardtop {
+    @include MFL;
+  }
+}
+textarea {
+  background-color: transparent;
+  border: 0;
+  resize: none;
+  border-bottom: 1px solid gold;
+  &:hover {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid gold;
+  }
+  &:focus {
+    border: 0;
+    outline: 0;
+    color:gold;
+    border-bottom: 2px solid gold;
+  }
+  &::placeholder {
+    color: gold;
+
+  }
+  &:focus{
+    &::placeholder{
+        color: gold;
+    }
+  }
+}
